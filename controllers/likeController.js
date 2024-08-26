@@ -1,9 +1,9 @@
 
-//import models
+
 const Post = require("../models/postModel");
 const Like = require("../models/likeModel");
 
-//like a post
+
 
 exports.likePost = async (req,res) => {
     try {
@@ -30,7 +30,7 @@ exports.likePost = async (req,res) => {
 }
 
 
-//Unlike a post
+
 exports.unlikePost = async (req,res) => {
 
     try{
