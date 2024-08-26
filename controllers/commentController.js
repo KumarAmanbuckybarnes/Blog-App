@@ -1,8 +1,8 @@
-//import model
+
 const Post = require("../models/postModel");
 const Comment = require("../models/commentModel");
 
-//business logic 
+
 
 exports.createComment = async (req, res) => {
     try{
@@ -13,7 +13,7 @@ exports.createComment = async (req, res) => {
             post,user,body
         });
 
-        //save the new comment into the database
+      
         const savedComment = await comment.save();
 
         //find the post by ID, add the new commnet to its comments array
