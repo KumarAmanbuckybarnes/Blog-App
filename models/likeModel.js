@@ -1,8 +1,8 @@
-//import mongoose
+
 const mongoose = require("mongoose");
 
 
-//route handler
+
 
 const likeSchema = new mongoose.Schema({
     post:{
@@ -15,5 +15,5 @@ const likeSchema = new mongoose.Schema({
     },
 });
 
-//export
+
 module.exports = mongoose.model("Like", likeSchema);
